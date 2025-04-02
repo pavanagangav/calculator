@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="main">
+    <div class="cal">
+        <form>
+            <div class="vis">
+                <input type="text" name="res"/>
+            </div>
+            <div>
+                <input type="button" value="AC" onclick="res.value=''"/>
+                <input type="button" value="Dl" onclick="res.value=res.value.toString().slice(0,-1)"/>
+                <input type="button" value="." onclick="res.value+='.'"/>
+                <input type="button" value="/" onclick="res.value+='/'"/>
+            </div>
+            <div>
+                <input type="button" value="7" onclick="res.value+='7'"/>
+                <input type="button" value="8" onclick="res.value+='8'"/>
+                <input type="button" value="9" onclick="res.value+='9'"/>
+                <input type="button" value="*" onclick="res.value+='*'"/>
+            </div>
+            <div>
+                <input type="button" value="4" onclick="res.value+='4'"/>
+                <input type="button" value="5" onclick="res.value+='5'"/>
+                <input type="button" value="6" onclick="res.value+='6'"/>
+                <input type="button" value="-" onclick="res.value+='-'"/>
+            </div>
+            <div>
+                <input type="button" value="1" onclick="res.value+='1'"/>
+                <input type="button" value="2" onclick="res.value+='2'"/>
+                <input type="button" value="3" onclick="res.value+='3'"/>
+                <input type="button" value="+" onclick="res.value+='+'"/>
+            </div>
+            <div>
+                <input type="button" value="00" onclick="res.value+='00'"/>
+                <input type="button" value="0" onclick="res.value+='0'"/>
+                <input type="button" value="=" onclick="res.value=eval(res.value)" style="width: 120px;"/>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+
+
+
+
